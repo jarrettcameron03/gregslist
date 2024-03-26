@@ -1,0 +1,45 @@
+<section class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-12 bg-white text-center py-3 shadow">
+            <h1>Job Listings</h1>
+        </div>
+        <div class="col-lg-4 col-md-6 col-11 my-4 p-3 text-center bg-white shadow border">
+            <form onsubmit="app.JobsController.addJob()">
+                <div class="row justify-content-center">
+                    <span class="fs-4">Create a job listing</span>
+                    <div class="col-6 py-2">
+                        <label for="">Company</label>
+                        <input class="form-control" type="text" name="company" required>
+                    </div>
+                    <div class="col-6 py-2">
+                        <label for="">Title</label>
+                        <input class="form-control" type="text" name="title" required>
+                    </div>
+                    <div class="col-6 py-2">
+                        <label for="">Salary</label>
+                        <input class="form-control" type="number" name="salary" min="20000" max="300000" required>
+                    </div>
+                    <div class="col-12 py-2">
+                        <label for="">Description</label>
+                        <textarea class="form-control" type="textarea" name="description" required></textarea>
+                    </div>
+                    <div class="col-12 py-2">
+                        <label for="">Listing Image URL</label>
+                        <input class="form-control" type="url" name="imgUrl" required>
+                    </div>
+                    <div class="col-4 mt-3">
+                        <button class="w-100 btn btn-primary">List</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class=" w-100">
+        </div>
+        <div class="col-12 py-3">
+            <div class="row justify-content-evenly" id="jobInjects">
+
+            </div>
+        </div>
+    </div>
+</section>
